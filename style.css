@@ -3,17 +3,25 @@
 	margin: 0;
 	padding: 0;
 }
+a {
+	text-decoration: none;
+}
+html {
+	scroll-behavior: smooth;
+}
 
 :root{
 	--purple: #872BFF;
 }
 
 body{
+	
 	padding: 70px 90px 0 90px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #hero{
+	margin-bottom: 100px;
 	height: 700px;
 	width: 100%;
 	background-image: url('./assets/hero-bg.png');
@@ -65,7 +73,7 @@ body{
 	align-items: start;
 	gap: 20px;
 }
-#hero .leftDiv .buttons button{
+button{
 	height: 50px;
 	padding: 0 50px 0 50px;
 	background-color: var(--purple);
@@ -84,4 +92,219 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+
+.section_name{
+	color: var(--purple);
+	font-size: 25px;
+	text-align: center;
+	font-weight: 700;
+}
+.section_description{
+	font-size: 35px;
+	text-align: center;
+	font-weight: 700;
+}
+
+#services, #best_place{
+	margin: 100px 0 100px 0;
+}
+
+.section_body{
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	gap: 200px;
+}
+
+#services .section_body .box{
+	background-color: #fff;
+	box-shadow: 2px 1px 10px 10px #0001;
+	display: flex;
+	justify-content:  center;
+	align-items: center;
+	flex-direction: column;
+	gap: 60px;
+	border-radius: 25px;
+	height: 500px;
+}
+
+#services .section_body .box div{
+	text-align: center;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 20px;
+	flex-direction: column;
+}
+#services .section_body .box div .title{
+	font-size: 23px;
+	font-weight: bold;
+}
+
+#services .section_body .box div .description{
+	color: #0006;
+}
+
+
+
+#best_place .section_body .box{
+	background-color: #fff;
+	box-shadow: 2px 1px 10px 10px #0001;
+	display: flex;
+	justify-content:  space-between;
+	align-items: center;
+	gap: 30px;
+	border-radius: 25px;
+	height: 500px;
+	width: 100%;
+	padding: 70px;
+}
+
+#best_place .section_body .box .cover{
+	height: 100%;
+	width: 30%;
+}
+#best_place .section_body .box div{
+	height: 100%;
+	width: 70%;
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-direction: column;
+	gap: 20px;
+	padding: 10px 0 10px 0;
+}
+
+#best_place .section_body .box div .title{
+	font-size: 30px;
+	font-weight: 700;
+}
+#best_place .section_body .box div img{
+	height: 100px;
+	width: auto;
+}
+#best_place .section_body .box div .description{
+	color: #0006;
+}
+
+#country {
+	height: auto;
+	width: 100%;
+	margin: 100px 0 100px 0;
+}
+
+#country .section_body{
+	flex-direction: column;
+	align-items: center;
+}
+
+#country .section_body .countries{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+#country .section_body .countries p{
+	background-color: #fff;
+	box-shadow: 2px 1px 10px 10px #0001;
+	padding: 30px 60px 30px 60px;
+	border-radius: 15px;
+	font-size: 25px;
+	font-weight: bold;
+	
+}
+
+#reviews {
+	height: auto;
+	width: 100%;
+	margin: 100px 0 300px 0;
+}
+#reviews .section_body{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	gap: 50px;
+}
+
+#reviews .section_body .review{
+	background-color: #fff;
+	box-shadow: 2px 1px 10px 10px #0001;
+	padding: 40px;
+	min-height: 300px;
+	width: 90%;
+	border-radius: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	color: #000000b4;
+	position: relative;
+}
+
+#reviews .section_body .review .name{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#reviews .section_body .review img{
+	height: 50px;
+	width: auto;
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+}
+
+
+footer{
+	height: 70px;
+	width: 100%;
+	background-color: #cba3ff;
+	padding: 0 100px 0 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+footer .links{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+footer .links a{
+	color: #fff;
+}
+
+footer .links a:hover{
+	color: #000;
+}
+
+footer .social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+footer .social svg{
+	height: 30px;
+	width: 30px;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: #872BFF;
+	fill: #fff;
 }
